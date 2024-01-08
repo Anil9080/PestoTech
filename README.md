@@ -54,6 +54,7 @@ Regression Testing: Ongoing
 
 # Part 2 Test Case Design 3. Functional Test Cases Functional Test Cases 
 # User Registration:
+
 __Test Case 1: Successful User Registration__
 
 Navigate to the registration page.
@@ -67,6 +68,7 @@ Enter an email that is already registered.
 Complete the registration form with valid data.
 Verify that an error message is displayed indicating the email is already in use.
 # Product Search:
+
 __Test Case 3: Basic Product Search__
 
 Navigate to the search bar.
@@ -80,6 +82,7 @@ Use advanced search filters (category, price range).
 Click on the search icon.
 Confirm that the search results match the specified criteria.
 # Adding Items to the Cart:
+
 __Test Case 5: Add Single Item to Cart__
 
 Navigate to a product page.
@@ -92,6 +95,7 @@ Add multiple items to the cart from different product pages.
 Go to the shopping cart.
 Confirm that all selected items are displayed in the cart.
 # Checkout Process:
+
 __Test Case 7: Proceed to Checkout from Cart__
 
 Navigate to the shopping cart.
@@ -102,6 +106,7 @@ Test Case 8: Complete Checkout Process
 Complete the entire checkout process with valid shipping and payment details.
 Confirm that the order confirmation page is displayed.
 Check email for order confirmation.
+
 __Test Case 9: Checkout Process with Invalid Payment Information__
 
 Proceed to the checkout page.
@@ -160,6 +165,7 @@ During the checkout process, enter a shipping address with the minimum character
 Verify that the system accepts the address.
 Enter a shipping address that reaches the maximum character limit (e.g., 150 characters).
 Verify that the system accepts the address.
+
 __Edge Test Case 6: Maximum Items in Cart During Checkout__
 
 Add items to the cart until the maximum allowed limit is reached.
