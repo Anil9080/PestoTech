@@ -148,19 +148,19 @@ __3. Adding Items to the Cart:__
 Add the maximum allowed quantity of a single item to the cart.
 Verify that the item is successfully added.
 __4. Checkout Process:__
-Boundary Test Case 5: Enter Minimum and Maximum Length Shipping Address
+___Boundary Test Case 5: Enter Minimum and Maximum Length Shipping Address__
 
 During the checkout process, enter a shipping address with the minimum character limit.
 Verify that the system accepts the address.
 Enter a shipping address that reaches the maximum character limit (e.g., 150 characters).
 Verify that the system accepts the address.
-Edge Test Case 6: Maximum Items in Cart During Checkout
+__Edge Test Case 6: Maximum Items in Cart During Checkout__
 
 Add items to the cart until the maximum allowed limit is reached.
 Proceed to the checkout process.
 Verify that the system handles the maximum limit of items correctly.
 __5. Order Management:__
-Boundary Test Case 7: View Order History with Maximum Number of Orders
+__Boundary Test Case 7: View Order History with Maximum Number of Orders__
 
 Generate and complete the maximum number of orders allowed for a user account.
 Verify that the order history page displays all orders correctly.
