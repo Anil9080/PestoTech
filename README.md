@@ -54,7 +54,7 @@ Regression Testing: Ongoing
 
 # Part 2 Test Case Design 3. Functional Test Cases Functional Test Cases 
 # User Registration:
-Test Case 1: Successful User Registration
+__Test Case 1: Successful User Registration__
 
 Navigate to the registration page.
 Enter valid user details (username, email, password).
@@ -67,7 +67,7 @@ Enter an email that is already registered.
 Complete the registration form with valid data.
 Verify that an error message is displayed indicating the email is already in use.
 # Product Search:
-Test Case 3: Basic Product Search
+__Test Case 3: Basic Product Search__
 
 Navigate to the search bar.
 Enter a valid product name.
@@ -80,7 +80,7 @@ Use advanced search filters (category, price range).
 Click on the search icon.
 Confirm that the search results match the specified criteria.
 # Adding Items to the Cart:
-Test Case 5: Add Single Item to Cart
+__Test Case 5: Add Single Item to Cart__
 
 Navigate to a product page.
 Click on the "Add to Cart" button for a specific product.
@@ -92,7 +92,7 @@ Add multiple items to the cart from different product pages.
 Go to the shopping cart.
 Confirm that all selected items are displayed in the cart.
 # Checkout Process:
-Test Case 7: Proceed to Checkout from Cart
+__Test Case 7: Proceed to Checkout from Cart__
 
 Navigate to the shopping cart.
 Click on the "Proceed to Checkout" button.
@@ -102,14 +102,14 @@ Test Case 8: Complete Checkout Process
 Complete the entire checkout process with valid shipping and payment details.
 Confirm that the order confirmation page is displayed.
 Check email for order confirmation.
-Test Case 9: Checkout Process with Invalid Payment Information
+__Test Case 9: Checkout Process with Invalid Payment Information__
 
 Proceed to the checkout page.
 Enter invalid payment information.
 Attempt to complete the checkout.
 Verify that an error message is displayed for the invalid payment information.
 # Order Management:
-Test Case 10: View Order History
+__Test Case 10: View Order History__
 
 Log in to the user account.
 Navigate to the order history section.
@@ -120,3 +120,47 @@ Log in to the user account.
 Go to the order history.
 Select an order and attempt to cancel it.
 Verify that the order status is updated, and cancellation is reflected.
+
+
+# Edge and Boundary Test Cases:
+__1. User Registration:__
+Edge Test Case 1: Maximum Character Limit for Username
+
+Attempt to register a user with a username that reaches the maximum character limit (e.g., 50 characters).
+Verify that the registration is successful.
+Boundary Test Case 2: Minimum and Maximum Character Limit for Password
+
+Attempt to register a user with a password that is one character long.
+Verify that the system rejects the registration.
+Attempt to register a user with a password that reaches the maximum character limit (e.g., 20 characters).
+Verify that the registration is successful.
+
+__2. Product Search:__
+Edge Test Case 3: Search for Product with Minimum and Maximum Character Limit
+
+Search for a product with a name that has the minimum character limit.
+Verify that the search results are accurate.
+Search for a product with a name that reaches the maximum character limit (e.g., 100 characters).
+Verify that the search results are accurate.
+__3. Adding Items to the Cart:__
+ Add Maximum Quantity of Items to Cart
+
+Add the maximum allowed quantity of a single item to the cart.
+Verify that the item is successfully added.
+__4. Checkout Process:__
+Boundary Test Case 5: Enter Minimum and Maximum Length Shipping Address
+
+During the checkout process, enter a shipping address with the minimum character limit.
+Verify that the system accepts the address.
+Enter a shipping address that reaches the maximum character limit (e.g., 150 characters).
+Verify that the system accepts the address.
+Edge Test Case 6: Maximum Items in Cart During Checkout
+
+Add items to the cart until the maximum allowed limit is reached.
+Proceed to the checkout process.
+Verify that the system handles the maximum limit of items correctly.
+__5. Order Management:__
+Boundary Test Case 7: View Order History with Maximum Number of Orders
+
+Generate and complete the maximum number of orders allowed for a user account.
+Verify that the order history page displays all orders correctly.
