@@ -114,7 +114,7 @@ Test Case 10: View Order History
 Log in to the user account.
 Navigate to the order history section.
 Verify that all previous orders are listed with correct details.
-Test Case 11: Cancel an Order
+# Test Case 11: Cancel an Order
 
 Log in to the user account.
 Go to the order history.
