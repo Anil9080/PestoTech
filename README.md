@@ -123,7 +123,9 @@ Verify that the order status is updated, and cancellation is reflected.
 
 
 # Edge and Boundary Test Cases:
+
 __1. User Registration:__
+
 Edge Test Case 1: Maximum Character Limit for Username
 
 Attempt to register a user with a username that reaches the maximum character limit (e.g., 50 characters).
@@ -136,17 +138,20 @@ Attempt to register a user with a password that reaches the maximum character li
 Verify that the registration is successful.
 
 __2. Product Search:__
+
 Edge Test Case 3: Search for Product with Minimum and Maximum Character Limit
 
 Search for a product with a name that has the minimum character limit.
 Verify that the search results are accurate.
 Search for a product with a name that reaches the maximum character limit (e.g., 100 characters).
 Verify that the search results are accurate.
+
 __3. Adding Items to the Cart:__
  Add Maximum Quantity of Items to Cart
 
 Add the maximum allowed quantity of a single item to the cart.
 Verify that the item is successfully added.
+
 __4. Checkout Process:__
 
 ___Boundary Test Case 5: Enter Minimum and Maximum Length Shipping Address__
@@ -160,6 +165,7 @@ __Edge Test Case 6: Maximum Items in Cart During Checkout__
 Add items to the cart until the maximum allowed limit is reached.
 Proceed to the checkout process.
 Verify that the system handles the maximum limit of items correctly.
+
 __5. Order Management:__
 
 __Boundary Test Case 7: View Order History with Maximum Number of Orders__
