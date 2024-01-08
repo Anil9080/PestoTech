@@ -51,4 +51,72 @@ Performance Testing: Week 7-8
 Security Testing: Week 9-10
 Compatibility Testing: Week 11-12
 Regression Testing: Ongoing
-This test strategy document serves as a guide for the comprehensive testing of the e-commerce website, ensuring a robust and reliable platform for users. Regular updates and communication will be maintained throughout the testing phases to address any emerging issues promptly.
+
+# Part 2 Test Case Design 3. Functional Test Cases Functional Test Cases 
+# User Registration:
+Test Case 1: Successful User Registration
+
+Navigate to the registration page.
+Enter valid user details (username, email, password).
+Click on the "Register" button.
+Verify successful registration by logging in with the registered credentials.
+Test Case 2: User Registration with Existing Email
+
+Navigate to the registration page.
+Enter an email that is already registered.
+Complete the registration form with valid data.
+Verify that an error message is displayed indicating the email is already in use.
+# Product Search:
+Test Case 3: Basic Product Search
+
+Navigate to the search bar.
+Enter a valid product name.
+Click on the search icon.
+Verify that relevant products are displayed.
+Test Case 4: Advanced Product Search
+
+Navigate to the search bar.
+Use advanced search filters (category, price range).
+Click on the search icon.
+Confirm that the search results match the specified criteria.
+# Adding Items to the Cart:
+Test Case 5: Add Single Item to Cart
+
+Navigate to a product page.
+Click on the "Add to Cart" button for a specific product.
+Go to the shopping cart.
+Verify that the selected item is displayed in the cart.
+Test Case 6: Add Multiple Items to Cart
+
+Add multiple items to the cart from different product pages.
+Go to the shopping cart.
+Confirm that all selected items are displayed in the cart.
+# Checkout Process:
+Test Case 7: Proceed to Checkout from Cart
+
+Navigate to the shopping cart.
+Click on the "Proceed to Checkout" button.
+Verify that the user is redirected to the checkout page.
+Test Case 8: Complete Checkout Process
+
+Complete the entire checkout process with valid shipping and payment details.
+Confirm that the order confirmation page is displayed.
+Check email for order confirmation.
+Test Case 9: Checkout Process with Invalid Payment Information
+
+Proceed to the checkout page.
+Enter invalid payment information.
+Attempt to complete the checkout.
+Verify that an error message is displayed for the invalid payment information.
+# Order Management:
+Test Case 10: View Order History
+
+Log in to the user account.
+Navigate to the order history section.
+Verify that all previous orders are listed with correct details.
+Test Case 11: Cancel an Order
+
+Log in to the user account.
+Go to the order history.
+Select an order and attempt to cancel it.
+Verify that the order status is updated, and cancellation is reflected.
