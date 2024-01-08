@@ -178,3 +178,58 @@ __Boundary Test Case 7: View Order History with Maximum Number of Orders__
 
 Generate and complete the maximum number of orders allowed for a user account.
 Verify that the order history page displays all orders correctly.
+
+
+# Test Automation Framework:
+
+__Selected Framework: Selenium__
+
+__Reasons for Selection:__
+
+Cross-Browser and Cross-Platform Compatibility:
+
+Selenium allows testing across various browsers and platforms, ensuring broad coverage.
+
+Open Source: Being open-source, Selenium is cost-effective and has a vast community for support and updates.
+
+Programming Language Support: Selenium supports multiple programming languages, providing flexibility. In this case, I'll use Python for scripting.
+
+Integration with Continuous Integration (CI) Tools: Selenium integrates seamlessly with CI tools like Jenkins, ensuring automated tests are part of the build pipeline.
+
+Framework Architecture Overview:
+
+Test Script: Written in Python using Selenium WebDriver.
+
+Test Framework: Utilizing Pytest for test organization, fixtures, and assertions.
+
+Page Object Model (POM): Implementing a POM design pattern for better code organization and maintenance.
+
+Reporting: Using Allure Framework for comprehensive and interactive test reports.
+
+Automated Test Scripts:
+
+__1. User Registration:__
+
+Positive Test Case: Verify successful user registration.
+
+Negative Test Case: Verify error message for registration with an existing email.
+
+__2. Product Search:__
+
+
+Positive Test Case: Verify accurate search results for a valid product.
+
+Negative Test Case: Verify appropriate response for searching with non-existent product.
+
+__3. Adding Items to the Cart:__
+
+Positive Test Case: Verify successful addition of items to the cart.
+Negative Test Case: Verify error message for attempting to add an out-of-stock item.
+
+__Test Data Management:__
+
+For managing test data, the automated test scripts will utilize a combination of:
+
+Test Data Files: CSV files containing various inputs for different test scenarios.
+
+Data Generation within Scripts: Dynamic generation of data for specific scenarios, ensuring flexibility and variety in testing.
